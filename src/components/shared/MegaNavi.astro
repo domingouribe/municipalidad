@@ -1,0 +1,64 @@
+---
+import MegaBlock from "./MegaBlock.astro";
+---
+
+<nav class="mega-navi">
+  <div class="mega-navi__group">
+    <button class="mega-navi__super">Municipalidad</button>
+    <MegaBlock
+      title="Municipalidad"
+      description="“Las Condes, Mejor para Todos”, resume el permanente trabajo y aspiración que tiene el municipio de otorgar a sus habitantes y quienes acuden a la comuna una buena atención y experiencia satisfactoria"
+    />
+  </div>
+
+  <div class="mega-navi__group">
+    <button class="mega-navi__super">Trámites</button>
+    <MegaBlock title="Trámites" />
+  </div>
+
+  <button class="mega-navi__super">Servicios</button>
+  <button class="mega-navi__super">Salud</button>
+  <button class="mega-navi__super">Educación</button>
+  <button class="mega-navi__super">Seguridad</button>
+  <button class="mega-navi__super">Recreación</button>
+  <button class="mega-navi__super">Las Condes Verde</button>
+  <button class="mega-navi__super">Participación ciudadana</button>
+  <button class="mega-navi__super">Atención al vecino</button>
+
+  <style lang="scss">
+    .mega-navi {
+      background-color: #0fbbd4;
+      display: flex;
+      flex-flow: row wrap;
+      position: relative;
+      justify-content: space-between;
+
+      &__group {
+        display: flex;
+      }
+
+      &__super {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem;
+        display: flex;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        background-color: transparent;
+        border: none;
+        justify-content: center;
+        flex-grow: 1;
+
+        &:hover {
+          background-color: black;
+          opacity: 0.8;
+        }
+      }
+      .button-active {
+        background-color: whitesmoke;
+        color: black;
+      }
+    }
+  </style>
+</nav>

@@ -1,0 +1,78 @@
+---
+import "../styles/app.scss";
+import Top from "../components/shared/Top.astro";
+import Header from "../components/shared/Header.astro";
+import Footer from "../components/shared/Footer.astro";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="top">
+      <Top
+        title="algo"
+        link="https://google.com"
+        linkText="Google"
+        icon="Icon"
+      />
+      <Top
+        title="algo"
+        link="https://google.com"
+        linkText="Google"
+        icon="Icon"
+      />
+      <Top
+        title="algo"
+        link="https://google.com"
+        linkText="Google"
+        icon="Icon"
+      />
+      <Top
+        title="algo"
+        link="https://google.com"
+        linkText="Google"
+        icon="Icon"
+      />
+      <Top
+        title="algo"
+        link="https://google.com"
+        linkText="Google"
+        icon="Icon"
+      />
+      <Top
+        title="algo"
+        link="https://google.com"
+        linkText="Google"
+        icon="Icon"
+      />
+    </div>
+
+    <Header />
+    <slot />
+
+    <Footer />
+
+    <style lang="scss">
+      .top {
+        background-color: #313c40;
+        padding: 1em;
+        color: whitesmoke;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        font-size: 14px;
+      }
+    </style>
+  </body>
+</html>
