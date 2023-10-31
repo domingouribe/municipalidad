@@ -1,36 +1,54 @@
 ---
-interface Props {
-  title: string;
-  link: string;
-  linkText: string;
-  icon: string;
-}
-const { title, link, icon, linkText } = Astro.props;
+import TopComponent from "./TopComponent.astro";
 ---
 
-<div class="top__box">
-  <p class="top__title">{title}</p>
-  <a href={link} class="top__link">{linkText}</a>
+<div class="top">
+  <div class="container">
+    <TopComponent
+      title="algo"
+      link="https://google.com"
+      linkText="Google"
+      icon="Icon"
+    />
+    <TopComponent
+      title="algo"
+      link="https://google.com"
+      linkText="Google"
+      icon="Icon"
+    />
+    <TopComponent
+      title="algo"
+      link="https://google.com"
+      linkText="Google"
+      icon="Icon"
+    />
+    <TopComponent
+      title="algo"
+      link="https://google.com"
+      linkText="Google"
+      icon="Icon"
+    />
+    <TopComponent
+      title="algo"
+      link="https://google.com"
+      linkText="Google"
+      icon="Icon"
+    />
+    <TopComponent
+      title="algo"
+      link="https://google.com"
+      linkText="Google"
+      icon="Icon"
+    />
+  </div>
 </div>
-
 <style lang="scss">
-  .top__box {
-    display: flex;
-    flex-flow: column wrap;
-    width: 150px;
-  }
-
-  .top__title {
-    text-transform: uppercase;
-  }
-
-  .top__link {
-    color: whitesmoke;
-    text-decoration: none;
-  }
-</style>
-
-<script>
-  //import "../scripts/app.js";
-  import '../../scripts/app.js'
-</script>
+      .top {
+        background-color: #313c40;
+        color: whitesmoke;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        font-size: 14px;
+      }
+    </style>

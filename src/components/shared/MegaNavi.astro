@@ -3,7 +3,8 @@ import MegaBlock from "./MegaBlock.astro";
 ---
 
 <nav class="mega-navi">
-  <div class="mega-navi__group">
+  <div class="container">
+    <div class="mega-navi__group">
     <button class="mega-navi__super">Municipalidad</button>
     <MegaBlock
       title="Municipalidad"
@@ -24,8 +25,10 @@ import MegaBlock from "./MegaBlock.astro";
   <button class="mega-navi__super">Las Condes Verde</button>
   <button class="mega-navi__super">Participación ciudadana</button>
   <button class="mega-navi__super">Atención al vecino</button>
+  </div>
+</nav>
 
-  <style lang="scss">
+<style lang="scss">
     .mega-navi {
       background-color: #0fbbd4;
       display: flex;
@@ -61,4 +64,3 @@ import MegaBlock from "./MegaBlock.astro";
       }
     }
   </style>
-</nav>

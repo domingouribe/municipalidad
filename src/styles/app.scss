@@ -1,41 +1,39 @@
-@use './utils/normalize';
-@use './utils/fonts.scss';
-
+@use "./utils/normalize";
+@use "./utils/fonts.scss";
 
 /* HTML */
 html {
-	box-sizing: border-box;
-	scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *:before,
 *:after {
-	box-sizing: inherit;
-    margin: 0;
+  box-sizing: inherit;
+  margin: 0;
 }
 
 .container {
-    display: inherit;
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
+  display: inherit;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: inherit;
+  flex-flow: inherit;
 }
 
 body {
-    font-family: 'Libre Franklin', sans-serif;
-    background-color: yellowgreen;
-    color: #202020;
+  font-family: "Libre Franklin", sans-serif;
+  background-color: yellowgreen;
+  color: #202020;
 }
 
-h1, h2, h3, h4 {
-    margin: 1rem 0;
+h1,
+h2,
+h3,
+h4 {
+  margin: 1rem 0;
 }
 p {
-    margin: 1rem 0;
-}main {
-    padding: 1em;
+  margin: 1rem 0;
 }
-
-
-
-

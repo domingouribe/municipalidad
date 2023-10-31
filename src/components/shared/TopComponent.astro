@@ -1,0 +1,44 @@
+---
+interface Props {
+  title: string;
+  link: string;
+  linkText: string;
+  icon: string;
+}
+const { title, link, icon, linkText } = Astro.props;
+---
+
+<div class="top__box">
+  <p class="top__title">{title}</p>
+  <a href={link} class="top__link">{linkText}</a>
+</div>
+
+<style lang="scss">
+  .top__box {
+    display: flex;
+    flex-flow: column wrap;
+    width: 150px;
+    padding: 1em;
+    gap: 0.3em;
+    align-items: center;
+
+    &:hover {
+      background-color: #202020;
+    }
+  }
+
+  .top__title {
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .top__link {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+</style>
+
+<script>
+  //import "../scripts/app.js";
+  import '../../scripts/app.js'
+</script>

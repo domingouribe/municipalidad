@@ -1,8 +1,8 @@
 ---
 import "../styles/app.scss";
-import Top from "../components/shared/Top.astro";
 import Header from "../components/shared/Header.astro";
 import Footer from "../components/shared/Footer.astro";
+import Top from "../components/shared/Top.astro";
 
 interface Props {
   title: string;
@@ -19,60 +19,9 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <div class="top">
-      <Top
-        title="algo"
-        link="https://google.com"
-        linkText="Google"
-        icon="Icon"
-      />
-      <Top
-        title="algo"
-        link="https://google.com"
-        linkText="Google"
-        icon="Icon"
-      />
-      <Top
-        title="algo"
-        link="https://google.com"
-        linkText="Google"
-        icon="Icon"
-      />
-      <Top
-        title="algo"
-        link="https://google.com"
-        linkText="Google"
-        icon="Icon"
-      />
-      <Top
-        title="algo"
-        link="https://google.com"
-        linkText="Google"
-        icon="Icon"
-      />
-      <Top
-        title="algo"
-        link="https://google.com"
-        linkText="Google"
-        icon="Icon"
-      />
-    </div>
-
+    <Top />
     <Header />
     <slot />
-
     <Footer />
-
-    <style lang="scss">
-      .top {
-        background-color: #313c40;
-        padding: 1em;
-        color: whitesmoke;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        font-size: 14px;
-      }
-    </style>
   </body>
 </html>

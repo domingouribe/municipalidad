@@ -1,49 +1,10 @@
 ---
-import HomeCard from "../components/HomeCard.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import HomeSlider from "../components/Home.Slider.astro"
 ---
 
 <MainLayout title="Bienvenidos a la Municipalidad">
-
-<main>
-    <section class="section">
-    <article class="article">
-        <header>
-            <h1 class="page__title"> Wellcome to our enterprises </h1>
-        </header>
-    </article>
-</section>
-
-<section class="home-cards">
-    <HomeCard 
-        title="Recursos Humanos"
-        description="Trabaja con nosotros"
-        link="https://domingouribe.com"
-    />
-    <HomeCard 
-        title="Departamento de tránsito"
-        description="Obtén tu licencia de conducir aquí"
-        link="https://domingouribe.com"
-    />
-    <HomeCard 
-        title="Aseo y ornato"
-        description="Trabaja con nosotros"
-        link="https://domingouribe.com"
-    />
-    <HomeCard 
-        title="Corporación Municipal de Educación"
-        description="Trabaja con nosotros"
-        link="https://domingouribe.com"
-    />
-</section>
-</main>
-
+    <main>
+        <HomeSlider />
+    </main>
 </MainLayout>
-
-<style lang="scss">
-    .home-cards {
-        display: flex;
-        flex-flow: row wrap;
-        gap: 1em;
-    }
-</style>
