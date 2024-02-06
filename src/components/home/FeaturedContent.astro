@@ -1,0 +1,26 @@
+---
+interface Props {
+  tagID?: string;
+  title: string;
+  description: string;
+  URL?: string;
+  image?: string;
+  imageAlt?: string;
+}
+
+const { tagID, title, description, URL, image, imageAlt } = Astro.props;
+---
+
+<div class="featured-contents__item">
+  <h3>{title}</h3>
+  <p>{description}</p>
+  <a href={URL} class="buton-cta magenta">Ver más</a>
+  <img src={URL} alt={title} />
+</div>
+
+
+<style lang="scss">
+.featured-contents__item {
+  background-color: white;
+}
+</style>

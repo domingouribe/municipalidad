@@ -1,0 +1,67 @@
+---
+
+---
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__box">
+      <h4>Sitios de interés</h4>
+      <ul class="footer__list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+        <li>Item 10</li>
+        <li>Item 11</li>
+        <li>Item 12</li>
+      </ul>
+    </div>
+    <div class="footer__box">
+      <h4>Preguntas frecuentes</h4>
+    </div>
+    <div class="footer__box">
+      <h4>Información de apoyo</h4>
+    </div>
+    <div class="footer__box footer__box--secutiry">
+      <a href="/" class="footer-secutiry-img">
+        <img
+          class="security-logo"
+          src="./assets/images/seguridad_lc3.png"
+          alt=""
+        />
+      </a>
+    </div>
+  </div>
+</footer>
+
+<style lang="scss">
+  .footer {
+    background-color: #262626;
+    color: whitesmoke;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    &__box {
+      flex: 1;
+
+      .footer__list {
+        list-style: none;
+        line-height: 2;
+      }
+    }
+
+    &--box-security {
+      flex: 2;
+    }
+    .security-logo {
+      width: 280px;
+      margin: 3em;
+    }
+  }
+</style>

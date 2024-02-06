@@ -1,10 +1,17 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import HomeSlider from "../components/Home.Slider.astro"
+import HomeSlider from "../components/home/Home.Slider.astro";
+import FeaturedContent from "../components/home/FeaturedContent.astro";
 ---
 
 <MainLayout title="Bienvenidos a la Municipalidad">
-    <main>
-        <HomeSlider />
-    </main>
+  <main>
+    <HomeSlider />
+    <section class="featured-contents">
+      <FeaturedContent 
+        title="Una cosa aquí"
+        description="Descripción de la caja"
+      />
+    </section>
+  </main>
 </MainLayout>

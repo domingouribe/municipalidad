@@ -1,0 +1,38 @@
+---
+//It's create the interface with their properties and types
+interface Props {
+    title: string;
+    description: string;
+    link: string;
+}
+
+//It's create the destructuring of this objetc
+const { title, description, link } = Astro.props;
+---
+
+
+<div class="home-card">
+    <h3 class="home-card__title">{title}</h3>
+    <p>{description}</p>
+    <a class="home-card__link"  href={link}>{title}</a>
+</div>
+
+<style lang="scss">
+    .home-card {
+        border: solid 1px white;
+        border-radius: 0.7em;
+        padding: 2em;
+        background-color: purple;
+        color: whitesmoke;
+        width: 15em;
+        flex: 1;
+    
+        &__title {
+            font-size: 1.5rem;
+        }
+
+        &__link {
+            color: white;
+        }
+    }
+</style>

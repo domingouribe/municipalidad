@@ -1,0 +1,20 @@
+---
+import HomeSliderComponent from "../home/HomeSliderComponent.astro";
+import diapo1 from '../home/slider/diapo1.jpg';
+---
+
+<section class="home-slider">
+  <HomeSliderComponent
+    imageURL={diapo1}
+    imageAlt="Descripción de la imagen acá"
+    sliderTitle="Este fin de semana largo ecarga tu local"
+    tag="Nuevo Programa de Seguridad"
+    cta="Infórmate aquí"
+  />
+</section>
+
+<style lang="scss">
+  .home-slider {
+    width: 100%;
+  }
+</style>
